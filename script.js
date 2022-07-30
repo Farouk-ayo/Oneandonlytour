@@ -4,7 +4,7 @@ const navBar = document.querySelector(`.navbar`);
 const navBarCheckbox = document.querySelector(`.navbar__checkbox `);
 const navbarToggle = document.querySelector(`.navbar__button`);
 
-// REVEAL SECTION
+// REVEAL SECTIONS
 const section = document.querySelectorAll(`.section`);
 const sectionLeft = document.querySelectorAll(`.section--left`);
 const sectionRight = document.querySelectorAll(`.section--right`);
