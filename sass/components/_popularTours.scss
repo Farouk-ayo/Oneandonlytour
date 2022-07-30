@@ -1,0 +1,66 @@
+.popular--tour--section {
+  height: 100%;
+  width: 34.3rem;
+  margin-bottom: 5rem;
+  box-shadow: 0rem 0.1rem 0.1rem #dad7d7;
+  overflow: hidden;
+
+  @include respond(tab-land) {
+    width: 36rem;
+  }
+  @include respond(tab-port) {
+    width: 36rem;
+  }
+
+  &:hover {
+    background-color: #f0f0f0;
+  }
+}
+
+.popular--image {
+  object-fit: cover;
+  img {
+    height: 25rem;
+    width: 100%;
+  }
+}
+.popular--highlight {
+  padding: 1rem 1rem;
+  width: 80%;
+  transform: translateY(-50%);
+  background-color: white;
+  p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    font-family: "Courier New", Courier, monospace;
+    letter-spacing: 0.3rem;
+  }
+  h3 {
+    font-size: 2.3rem;
+  }
+}
+.popular--schedule {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.popular--icon {
+  display: flex;
+  align-items: center;
+  font-size: 1.5rem;
+}
+.all--tours--link {
+  margin-bottom: 10rem;
+  text-align: center;
+  a {
+    text-decoration: none;
+    @include h3;
+    color: rgb(68, 67, 67);
+    &:hover {
+      color: var(--color-secondary-dark);
+    }
+  }
+  transition: 0.2s;
+}

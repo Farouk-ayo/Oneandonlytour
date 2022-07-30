@@ -1,0 +1,20 @@
+@import "abstracts/functions";
+@import "abstracts/mixins";
+@import "abstracts/variables";
+
+@import "base/animations";
+@import "base/base";
+@import "base/typography";
+@import "base/utilities";
+
+@import "components/button";
+@import "components/logo";
+@import "components/form";
+@import "components/popularTours";
+@import "components/allTours";
+@import "components/activities";
+
+@import "layouts/footer";
+@import "layouts/body";
+@import "layouts/header";
+@import "layouts/navigation";

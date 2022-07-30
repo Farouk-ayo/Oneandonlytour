@@ -1,0 +1,365 @@
+.find--tour {
+  @include whitespace;
+  h1 {
+    font-size: 2.5rem;
+  }
+  p {
+    font-size: 1.5rem;
+    color: rgb(68, 67, 67);
+    & > * {
+      margin: 2rem;
+      @include respond(tab-port) {
+        margin: 0.5rem;
+      }
+    }
+    @include respond(tab-land) {
+      width: 60%;
+    }
+    @include respond(tab-port) {
+      width: 100%;
+    }
+  }
+}
+
+.one--and--only--section {
+  display: flex;
+  align-items: center;
+  @include whitespace;
+  background-color: #f0f0f0;
+
+  @include respond(tab-port) {
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+.one--and--only--picture {
+  width: 50%;
+  padding-top: 10rem;
+  padding-left: 3rem;
+  @include respond(tab-port) {
+    width: 85%;
+  }
+}
+.img {
+  box-shadow: 7rem -3rem 0.1rem #e6e4e4;
+  width: 60%;
+  height: 100%;
+  object-fit: cover;
+}
+.one--and--only {
+  width: 40%;
+  @include respond(tab-land) {
+    padding: 2rem 0;
+  }
+  @include respond(tab-port) {
+    width: 85%;
+  }
+  h1 {
+    position: relative;
+    z-index: 1;
+    font-size: 3rem;
+  }
+  p {
+    margin-top: 2rem;
+    font-size: 1.5rem;
+    color: rgb(68, 67, 67);
+  }
+  ul {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    margin-top: 2rem;
+    grid-row-gap: 2rem;
+    margin-bottom: 3rem;
+    @include respond(tab-land) {
+      grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    }
+    @include respond(tab-port) {
+      grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    }
+    li {
+      text-decoration: none;
+      font-size: 1.5rem;
+    }
+  }
+}
+.popular--tour__heading {
+  @include whitespace;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 30rem;
+  // cropped the image and apply the graident as seen in the adventure site
+  // using the linea weather icon put the atmospheric conditions also on the details of most popular tour
+  // types of background that we have : e.g conic gradient
+  color: #f0f0f0;
+  position: relative;
+  z-index: -1;
+  background-image: linear-gradient(#00435e 50%, #00435ebd),
+    url(../images/img3g.jpg);
+  background-size: cover;
+  overflow: hidden;
+
+  h3 {
+    font-size: 2.5rem;
+    margin-top: -6rem;
+  }
+  h1 {
+    @include h1;
+    @include respond(phone) {
+      padding-bottom: 4rem;
+      padding-left: 2rem;
+    }
+  }
+}
+
+.popular--tour {
+  @include whitespace;
+  margin-top: -13rem;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  @include respond(tab-land) {
+    gap: 4rem;
+  }
+}
+
+.activities {
+  @include whitespace;
+  background-color: #f0f0f0;
+  position: relative;
+  &--content {
+    display: flex;
+    justify-content: center;
+    padding: 6rem;
+
+    @include respond(tab-land) {
+      flex-direction: column;
+    }
+
+    h1 {
+      @include h1;
+      position: relative;
+      width: 100%;
+      z-index: 10;
+      margin-right: 2rem;
+      @include respond(tab-land) {
+        margin-bottom: 2rem;
+      }
+    }
+    p {
+      font-size: 2rem;
+      color: #444343;
+    }
+  }
+}
+
+.view--all--section {
+  @include whitespace;
+
+  overflow: hidden;
+  display: grid;
+  grid-template: repeat(12, 3.5vw) / repeat(8, 1fr);
+
+  @include respond(phone) {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.why--choose--section {
+  @include whitespace;
+  display: flex;
+  gap: 5rem;
+  justify-content: space-between;
+  @include respond(tab-port) {
+    flex-direction: column;
+  }
+}
+.why--choose {
+  @include sectionflex;
+  width: 50vw;
+  padding-top: 5rem;
+  &__img {
+    display: flex;
+    gap: 1rem;
+  }
+  &__image {
+    width: 25rem;
+    height: 20rem;
+    object-fit: cover;
+    @include respond(tab-port) {
+      width: 50%;
+      height: 60%;
+    }
+  }
+  @include respond(tab-port) {
+    width: 100%;
+  }
+}
+.booking--section {
+  background-color: #f0f0f0;
+  width: 40vw;
+  padding-top: 5rem;
+  display: flex;
+  justify-content: end;
+  @include respond(tab-port) {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+.review_overview {
+  display: flex;
+  @include whitespace;
+  // height: 70%;
+  flex-direction: row;
+  @include respond(tab-port) {
+    flex-direction: column;
+    // height: inherit;
+    gap: 3rem;
+  }
+}
+.review {
+  @include sectionflex;
+  width: 50vw;
+  background-color: #f0f0f0;
+  padding: 3rem 5rem;
+  position: relative;
+  @include respond(tab-port) {
+    width: 100%;
+  }
+}
+.testimonial--content {
+  display: flex;
+  overflow: hidden;
+  position: relative;
+
+  width: 100%;
+}
+.testimonial {
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1rem;
+  position: absolute;
+  align-items: center;
+  &__shown {
+    position: relative;
+  }
+  img {
+    width: 6rem;
+    height: 6rem;
+    border-radius: 100%;
+    object-fit: cover;
+  }
+  blockquote {
+    font-size: 2rem;
+    color: #444343;
+    &::before {
+      content: "\201C";
+      position: absolute;
+      color: var(--color-secondary-dark);
+      top: 1rem;
+      font-size: 10rem;
+    }
+  }
+  &__1 {
+    transform: translateX(0);
+  }
+  &__2 {
+    transform: translateX(100%);
+  }
+  &__3 {
+    transform: translateX(200%);
+  }
+}
+
+.video--content {
+  position: relative;
+  width: 40vw;
+  @include respond(tab-port) {
+    width: 100%;
+    position: relative;
+    height: 100%;
+  }
+}
+
+.guide--section {
+  @include whitespace;
+  display: flex;
+  @include respond(tab-port) {
+    flex-direction: column;
+    gap: 3rem;
+  }
+  @include respond(tab-port) {
+    flex-direction: column-reverse;
+  }
+
+  &__personel {
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 6rem 4rem;
+    gap: 3rem;
+    @include respond(tab-port) {
+      width: 100%;
+    }
+    @include respond(tab-port) {
+      flex-direction: column;
+    }
+  }
+  &__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 3rem;
+    margin-left: 4rem;
+    padding-bottom: 4rem;
+    // width: 40vw;
+
+    @include respond(tab-port) {
+    }
+    @include h3;
+    h1 {
+      font-size: 3rem;
+    }
+    p {
+      font-size: 1.5rem;
+      color: #444343;
+    }
+  }
+}
+
+.guide--image {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.guide--img {
+  height: 30rem;
+  width: 27rem;
+  margin-bottom: 2rem;
+  object-fit: cover;
+  @include respond(tab-port) {
+    width: 100%;
+    height: 100%;
+  }
+}
+.guide--info {
+  h3 {
+    font-size: 2.3rem;
+  }
+  p {
+    font-size: 2rem;
+    color: $color-dark-component;
+  }
+}

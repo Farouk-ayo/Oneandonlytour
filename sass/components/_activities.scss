@@ -1,0 +1,43 @@
+.activities--images {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  overflow: hidden;
+}
+
+.activities-slide {
+  height: 26rem;
+  position: relative;
+}
+.act-img {
+  width: 22rem;
+  height: 26rem;
+  object-fit: cover;
+  filter: brightness(50%);
+  @include respond(tab-land) {
+    height: 25rem;
+    width: 18rem;
+  }
+  @include respond(tab-port) {
+    height: 24rem;
+    width: 14rem;
+  }
+
+  &:active,
+  &:hover {
+    filter: brightness(70%);
+    transform: scale(1.1);
+  }
+
+  &__cap {
+    overflow: hidden;
+    p {
+      font-size: 2rem;
+      color: white;
+      text-transform: uppercase;
+      position: absolute;
+      margin-top: -10rem;
+      margin-left: 4rem;
+    }
+  }
+}
