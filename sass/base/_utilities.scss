@@ -1,7 +1,10 @@
 .icon {
   fill: var(--color-secondary-dark);
-  width: 1.5rem;
-  height: 1.5rem;
+  width: 2rem;
+  height: 2rem;
+  animation: moveToBottomLittle 2s cubic-bezier(0.165, 0.84, 0.44, 1) infinite;
+  animation-delay: none;
+  cursor: pointer;
 }
 
 .svg-icon {

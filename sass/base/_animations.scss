@@ -1,3 +1,13 @@
+@keyframes moveToBottomLittle {
+  0% {
+    transform: translateY(1rem);
+  }
+
+  100% {
+    transform: translate(0);
+  }
+}
+
 @keyframes moveToBottom {
   0% {
     opacity: 0;
