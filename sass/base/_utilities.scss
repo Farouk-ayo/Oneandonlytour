@@ -8,8 +8,8 @@
 }
 
 .svg-icon {
-  width: 3rem;
-  height: 3rem;
+  width: 1.5rem;
+  height: 1.5rem;
 }
 .list--icon {
   margin-bottom: -0.5rem;
@@ -23,6 +23,7 @@
 .text--bg {
   position: relative;
   color: black;
+  font-family: "Courier New", Courier, monospace;
   &::after {
     content: "";
     position: absolute;
@@ -209,6 +210,10 @@
   opacity: 0;
   transform: translateY(8rem);
 }
+.color {
+  color: #fddd7c;
+}
+
 // .spinner {
 //   margin: auto;
 //   position: fixed;

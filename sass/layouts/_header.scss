@@ -49,6 +49,7 @@
   align-items: center;
   color: var(--color-white);
   animation: moveToLeft 2s cubic-bezier(0.57, 1.1, 0.58, 1);
+  font-family: "Courier New", Courier, monospace;
   @include respond(tab-land) {
     font-size: 3.5rem;
   }
@@ -60,6 +61,7 @@
 }
 .heading--text {
   font-size: 2rem;
+  // font-family: "Courier New", Courier, monospace;
   display: block;
   width: 50%;
   letter-spacing: 0.5rem;

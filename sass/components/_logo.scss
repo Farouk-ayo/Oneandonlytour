@@ -41,18 +41,21 @@
   }
   p {
     font-size: 2.5rem;
+    font-family: "Courier New", Courier, monospace;
     @include respond(tab-port) {
       font-size: 2rem;
     }
   }
   h1 {
     font-size: 3rem;
+    font-family: "Courier New", Courier, monospace;
     @include respond(tab-port) {
       font-size: 2.5rem;
     }
   }
   h6 {
     font-size: 2.4rem;
+    font-family: "Courier New", Courier, monospace;
     @include respond(tab-port) {
       font-size: 1.9rem;
     }

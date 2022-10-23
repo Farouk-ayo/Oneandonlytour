@@ -49,7 +49,10 @@
 .popular--icon {
   display: flex;
   align-items: center;
-  font-size: 1.5rem;
+  gap: 0.3rem;
+  padding: 0rem 0.5rem;
+  font-size: 1.2rem;
+  font-family: "Courier New", Courier, monospace;
 }
 .all--tours--link {
   margin-bottom: 10rem;
